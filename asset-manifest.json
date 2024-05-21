@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-list/static/css/main.41851e01.css",
-    "main.js": "/my-list/static/js/main.8b8e5b33.js",
-    "static/js/453.82362a10.chunk.js": "/my-list/static/js/453.82362a10.chunk.js",
-    "index.html": "/my-list/index.html",
-    "main.41851e01.css.map": "/my-list/static/css/main.41851e01.css.map",
-    "main.8b8e5b33.js.map": "/my-list/static/js/main.8b8e5b33.js.map",
-    "453.82362a10.chunk.js.map": "/my-list/static/js/453.82362a10.chunk.js.map"
+    "main.css": "/vitoriakelly.github.io/static/css/main.41851e01.css",
+    "main.js": "/vitoriakelly.github.io/static/js/main.fb1e40e1.js",
+    "static/js/453.82362a10.chunk.js": "/vitoriakelly.github.io/static/js/453.82362a10.chunk.js",
+    "index.html": "/vitoriakelly.github.io/index.html",
+    "main.41851e01.css.map": "/vitoriakelly.github.io/static/css/main.41851e01.css.map",
+    "main.fb1e40e1.js.map": "/vitoriakelly.github.io/static/js/main.fb1e40e1.js.map",
+    "453.82362a10.chunk.js.map": "/vitoriakelly.github.io/static/js/453.82362a10.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41851e01.css",
-    "static/js/main.8b8e5b33.js"
+    "static/js/main.fb1e40e1.js"
   ]
 }
