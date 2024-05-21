@@ -24,7 +24,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      uses: vitoriakelly/vitoriakelly.github.io/@v3
+      uses: vitoriakelly/vitoriakelly.github.io
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: main
