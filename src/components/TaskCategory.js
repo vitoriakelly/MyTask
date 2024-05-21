@@ -86,11 +86,9 @@ function TaskCategory() {
 
   return (
     <div className="container">
-      <h2>Create Task Category</h2>
-      <h3>Welcome, {name}</h3>
+      <h2>Categorias de {name} </h2>
       <form onSubmit={handleCategorySubmit} className="form">
         <div>
-          <label>Category Name:</label>
           <input
             type="text"
             value={category}
@@ -98,10 +96,10 @@ function TaskCategory() {
             required
           />
         </div>
-        <button type="submit">{editCategory ? 'Edit Category' : 'Add Category'}</button>
+        <button type="submit">{editCategory ? 'Salvar' : 'Adicionar'}</button>
       </form>
       <div>
-        <h3>Existing Categories:</h3>
+        <h3>Categorias:</h3>
         <ul className="categories">
           {categories && categories.map((cat, index) => (
             <li key={index} className="category-item">
@@ -130,7 +128,7 @@ function TaskCategory() {
               {addingTaskCategory === cat && (
                 <form onSubmit={handleAddTask} className="form">
                   <div>
-                    <label>New Task:</label>
+                    <label>Nova Tarefa:</label>
                     <input
                       type="text"
                       value={newTask}
@@ -138,7 +136,7 @@ function TaskCategory() {
                       required
                     />
                   </div>
-                  <button type="submit">Add Task</button>
+                  <button type="submit">Tarefa</button>
                 </form>
               )}
             </li>

@@ -10,7 +10,10 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
         const storedUser = JSON.parse(localStorage.getItem('user'));
-
+        if (!username.trim() || !password.trim()) {
+            alert("Todos os campos devem ser preenchidos!")
+            return;
+        }
         if(storedUser && storedUser.username === username && storedUser.password === password) {
             alert('Login efetuado');
             navigate('/home');
@@ -34,7 +37,7 @@ function Login() {
                 <button type="submit">Login</button>
             </form>
             
-            <div className="link"> {/* Adicione a classe link aqui */}
+            <div className="link">
                 <p>Cadastre-se <Link to="/signup">Sing Up</Link> </p>
             </div>
         </div>

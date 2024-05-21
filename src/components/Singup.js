@@ -10,9 +10,13 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!name.trim() || !username.trim() || !password.trim()) {
+      alert("Todos os campos devem ser preenchidos!")
+      return;
+    }
     const user = { name, username, password };
     localStorage.setItem('user', JSON.stringify(user));
-    navigate('/');
+    navigate('/my-list');
   };
 
   return (
@@ -20,7 +24,7 @@ function Signup() {
       <h2>Signup</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name:</label>
+          <label>Nome:</label>
           <input
             type="text"
             value={name}
@@ -36,14 +40,14 @@ function Signup() {
           />
         </div>
         <div>
-          <label>Password:</label>
+          <label>Senha:</label>
           <input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit">Cadastrar</button>
       </form>
     </div>
   );
