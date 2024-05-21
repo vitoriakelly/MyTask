@@ -1,7 +1,7 @@
 {
   "name": "my-list",
   "version": "0.1.0",
-  "homepage": "https://vitoriakelly.github.io/",
+  "homepage": "https://github.com/vitoriakelly/vitoriakelly.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
